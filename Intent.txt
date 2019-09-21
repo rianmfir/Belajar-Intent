@@ -1,0 +1,24 @@
+   
+Explicit Intent 
+    	Adalah tipe Intent yang digunakan untuk menjalankan komponen dari dalam sebuah aplikasi. 
+	Explicit intent bekerja dengan menggunakan nama kelas yang dituju misal : com.dicoding.activity.DetailActivity. 
+	Umumnya intent ini digunakan untuk mengaktifkan komponen pada satu aplikasi.
+    
+Implicit Intent 
+   	Adalah tipe intent yang tidak memerlukan detail nama kelas yang ingin diaktifkan. 
+	Model ini memungkinkan komponen dari aplikasi lain bisa merespon request intent yang dijalankan.
+    	Penggunaan tipe intent ini umumnya diperuntukan untuk menjalankan fitur/fungsi dari komponen aplikasi lain. 
+	Contohnya ketika kita membutuhkan fitur untuk mengambil foto. 
+	Daripada membuat sendiri fungsi kamera, lebih baik kita menyerahkan proses tersebut 
+		pada aplikasi kamera bawaan dari peranti atau aplikasi kamera lain yang telah terinstal sebelumnya di peranti.
+    	Hal yang sama misalnya ketika kita membutuhkan fungsi berbagi konten. 
+	Kita bisa memanfaatkan intent untuk menampilkan aplikasi mana saja yang bisa menangani fitur tersebut.
+    	Implementasi implicit intent ini akan sangat memudahkan bagi pengembang agar tetap fokus pada proses bisnis inti dari aplikasi yang dikembangkan.
+
+putExtra()
+	Untuk mengirimkan data bersamaan dengan obyek Intent. 
+	Sedangkan metode putExtra() itu sendiri merupakan metode yang menampung pasangan key-value dan memiliki beberapa pilihan tipe input.
+
+Uri (Uniform Resource Identifier)
+	Sebuah untaian karakter yang digunakan untuk mengidentifikasi nama, sumber, atau layanan di internet sesuai dengan RFC 2396. 
+	Pada Uri.parse("tel:"+phoneNumber) kita melakukan parsing Uri dari bentuk teks string menjadi sebuah obyek uri dengan menggunakan metode static parse(String)
